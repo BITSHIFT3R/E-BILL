@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MOBILE NO."
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="normal|bold|italic"/>
+        <EditText
+            android:id="@+id/addnewmobileno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="#f5f5f5"
+            android:layout_marginLeft="90dp"
+            android:inputType="number"
+            android:padding="10dp"
+            android:maxLength="10"
+            android:textColorHint="#2f6699"
+            >
+            <requestFocus />
+        </EditText>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.59" >
+
+            <EditText
+                android:id="@+id/addname1"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView1"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/edittext_round"
+                android:inputType="textPostalAddress"
+                android:padding="3dip" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/addaddress1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvmtrno"
+                android:layout_alignBottom="@+id/tvmtrno"
+                android:layout_alignLeft="@+id/addname1"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/edittext_round"
+                android:inputType="textPostalAddress"
+                android:padding="3dip" />
+
+            <EditText
+                android:id="@+id/addnoofmtr1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/addaddress1"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/addaddress1"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/edittext_round"
+                android:inputType="textPostalAddress"
+                android:padding="3dip" />
+
+            <EditText
+                android:id="@+id/addmtrno1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView6"
+                android:layout_alignBottom="@+id/textView6"
+                android:layout_alignLeft="@+id/addnoofmtr1"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/edittext_round"
+                android:inputType="textPostalAddress"
+                android:padding="3dip" />
+
+            <EditText
+                android:id="@+id/addaccno1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvmtrkwhmd"
+                android:layout_alignBottom="@+id/tvmtrkwhmd"
+                android:layout_alignLeft="@+id/addmtrno1"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/edittext_round"
+                android:padding="3dip" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvmtrno"
+                android:layout_alignTop="@+id/addnoofmtr1"
+                android:text="No. Of Meters"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="normal|bold|italic" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="22dp"
+                android:text="Name"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="normal|bold|italic" />
+
+            <TextView
+                android:id="@+id/tvmtrno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView1"
+                android:layout_below="@+id/textView1"
+                android:layout_marginTop="16dp"
+                android:text="Address"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="normal|bold|italic" />
+
+            <TextView
+                android:id="@+id/tvmtrkwhmd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView6"
+                android:layout_below="@+id/addmtrno1"
+                android:layout_marginTop="22dp"
+                android:text="Account No."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="normal|bold|italic" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView5"
+                android:layout_below="@+id/addnoofmtr1"
+                android:layout_marginTop="21dp"
+                android:text="Meter No."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="normal|bold|italic" />
+
+            <Spinner
+                android:id="@+id/addnewtrans"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_alignLeft="@+id/spstation"
+                android:layout_alignTop="@+id/textView2"
+                android:background="@drawable/n" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvmtrkwhmd"
+                android:layout_alignRight="@+id/textView2"
+                android:layout_below="@+id/addnewtrans"
+                android:layout_marginTop="21dp"
+                android:text="Pole"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="normal|bold|italic" />
+
+            <Spinner
+                android:id="@+id/addnewpole"
+                android:layout_width="wrap_content"
+                android:layout_height="35dip"
+                android:layout_alignLeft="@+id/addnewtrans"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/textView3"
+                android:background="@drawable/n" />
+
+            <Spinner
+                android:id="@+id/spstation"
+                android:layout_width="wrap_content"
+                android:layout_height="35dip"
+                android:layout_alignLeft="@+id/addaccno1"
+                android:layout_alignTop="@+id/textView4" 
+                     android:background="@drawable/n" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/tvmtrkwhmd"
+                android:layout_below="@+id/spstation"
+                android:layout_marginTop="19dp"
+                android:text="Transformer"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="normal|bold|italic" />
+
+            <Button
+                android:id="@+id/addsubmitbtn1"
+                android:layout_width="220dip"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addnewpole"
+                android:layout_centerHorizontal="true"
+                android:scrollbars="vertical"
+                android:text="SUBMT" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvmtrkwhmd"
+                android:layout_below="@+id/addaccno1"
+                android:layout_marginTop="23dp"
+                android:text="Substation"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="normal|bold|italic" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

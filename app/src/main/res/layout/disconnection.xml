@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   
+    android:fillViewport="true"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/mainadd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/mainfather"
+                android:layout_alignRight="@+id/mainfather"
+                android:layout_alignTop="@+id/textView5"
+                android:background="@drawable/edittext_round"
+                android:ems="10"
+                android:inputType="textPostalAddress"
+                android:padding="3dip" />
+
+            <EditText
+                android:id="@+id/discheq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView6"
+                android:layout_alignBottom="@+id/textView6"
+                android:layout_alignLeft="@+id/mainadd"
+                android:layout_alignRight="@+id/mainadd"
+                android:background="@drawable/edittext_round"
+                android:ems="10"
+                android:inputType="textPostalAddress"
+                android:padding="3dip" />
+
+            <TextView
+                android:id="@+id/disac"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tvmtrno"
+                android:layout_alignLeft="@+id/disdiv"
+                android:layout_alignRight="@+id/disdiv"
+                android:background="@drawable/edittext_round"
+                android:ems="10"
+                android:padding="3dip"
+                 android:textStyle="normal|bold|italic"
+                android:text="TextView"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/mainnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/discheq"
+                android:layout_alignRight="@+id/discheq"
+                android:layout_alignTop="@+id/tvmtrkwhmd"
+                android:background="@drawable/edittext_round"
+                android:ems="10"
+                android:inputType="textPostalAddress"
+                android:padding="3dip" />
+
+            <EditText
+                android:id="@+id/mainname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/mainnumber"
+                android:layout_alignRight="@+id/mainnumber"
+                android:layout_alignTop="@+id/textView9"
+                android:background="@drawable/edittext_round"
+                android:ems="10"
+                android:inputType="textPostalAddress"
+                android:padding="3dip" />
+
+            <EditText
+                android:id="@+id/mainfather"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/disac"
+                android:layout_alignRight="@+id/disac"
+                android:layout_alignTop="@+id/tvmtrname"
+                android:background="@drawable/edittext_round"
+                android:ems="10"
+                android:inputType="textPostalAddress"
+                android:padding="3dip" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/bc"
+                android:gravity="center"
+                android:text="Disconnection"
+                 android:textStyle="normal|bold|italic"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="90dip"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView9"
+                android:layout_alignRight="@+id/textView9"
+                android:layout_below="@+id/textView1"
+                android:layout_marginTop="30dp"
+                android:text="Division"
+                 android:textStyle="normal|bold|italic"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/disdiv"
+                android:layout_width="120dip"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView2"
+                android:layout_alignBottom="@+id/textView2"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/tvmtrname"
+                android:background="@drawable/edittext_round"
+                android:inputType="textPostalAddress"
+                android:padding="3dip"
+                android:text="TextView"
+                android:textSize="18dp"
+                android:textStyle="normal|bold|italic" />
+
+            <TextView
+                android:id="@+id/tvmtrno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvmtrname"
+                android:layout_below="@+id/disdiv"
+                android:layout_marginTop="12dip"
+                android:text="Account No"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="normal|bold|italic" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView6"
+                android:layout_alignRight="@+id/textView6"
+                android:layout_below="@+id/mainfather"
+                android:layout_marginTop="6dip"
+                android:text="Bank"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="normal|bold|italic" />
+
+            <TextView
+                android:id="@+id/tvmtrname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView5"
+                android:layout_below="@+id/tvmtrno"
+                android:layout_marginTop="6dip"
+                android:text="Disconnection No."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="normal|bold|italic" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView9"
+                android:layout_alignRight="@+id/textView2"
+                android:layout_below="@+id/mainadd"
+                android:layout_marginTop="6dip"
+                android:text="Cheque No."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="normal|bold|italic" />
+
+            <TextView
+                android:id="@+id/tvmtrkwhmd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView9"
+                android:layout_alignRight="@+id/textView6"
+                android:layout_below="@+id/discheq"
+                android:layout_marginTop="6dip"
+                android:text="R.D.Fee"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="normal|bold|italic" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/mainnumber"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="6dip"
+                android:text="Check amount"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="normal|bold|italic" />
+
+            <Button
+                android:id="@+id/mainsubmit"
+                android:layout_width="220dip"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mainname"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dip"
+                android:text="Submit" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

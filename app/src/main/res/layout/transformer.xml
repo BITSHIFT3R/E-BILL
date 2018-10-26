@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   
+    android:orientation="vertical"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout12"
+        android:layout_width="match_parent"
+        android:layout_height="355dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="27dp"
+                android:background="@drawable/bc"
+                android:gravity="center"
+                android:text="Transformer Master"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="normal|bold|italic" />
+
+            <Spinner
+                android:id="@+id/ettransname"
+                android:layout_width="wrap_content"
+                android:layout_height="45dip"
+                android:layout_alignLeft="@+id/ettranscode"
+                android:layout_alignRight="@+id/ettranscode"
+                android:layout_alignTop="@+id/tvmtrname"
+android:background="@drawable/n"
+                android:ems="10"
+                android:inputType="textPostalAddress"
+                android:padding="3dip" />
+
+            <TextView
+                android:id="@+id/tvmtrname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/repldiv"
+                android:layout_alignRight="@+id/repldiv"
+                android:layout_below="@+id/ettranscode"
+                android:layout_marginTop="9dip"
+                android:text="Substation"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="normal|bold|italic" />
+
+            <TextView android:text="TextView"
+                android:id="@+id/ettranscode"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/tvmtrno"
+                android:layout_toRightOf="@+id/tvmtrno"
+                android:background="@drawable/edittext_round"
+                android:ems="10"
+                android:inputType="textPostalAddress"
+                android:padding="3dip" />
+
+            <EditText
+                android:id="@+id/sptranscode"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignRight="@+id/replaceseal"
+                android:layout_below="@+id/ettransname"
+                android:background="@drawable/edittext_round"
+                android:layout_marginTop="14dp"
+                android:layout_toRightOf="@+id/repldiv"
+               />
+
+            <TextView
+                android:id="@+id/tvmtrno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvmtrname"
+                android:layout_alignRight="@+id/tvmtrname"
+                android:layout_below="@+id/textView1"
+                android:layout_marginTop="18dp"
+                android:text="Division"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="normal|bold|italic" />
+
+            <TextView
+                android:id="@+id/repldiv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/sptranscode"
+                android:layout_marginLeft="15dp"
+                android:text="Transformer Code"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="normal|bold|italic" />
+
+            <Button
+                android:id="@+id/replaceseal"
+                android:layout_width="220dip"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Photo"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="normal|bold|italic"
+                android:layout_alignTop="@+id/replaceimagemtr"
+                android:layout_alignLeft="@+id/repldiv"
+                android:layout_alignStart="@+id/repldiv" />
+
+            <Button
+                android:id="@+id/replaceimagemtr"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:text="Capture"
+                android:layout_above="@+id/replaceseal"
+                android:layout_centerHorizontal="true" />
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/translv"
+                android:layout_below="@+id/repldiv"
+                android:layout_above="@+id/textView2"
+                android:layout_alignLeft="@+id/sptranscode"
+                android:layout_alignStart="@+id/sptranscode"
+                android:layout_alignRight="@+id/sptranscode"
+                android:layout_alignEnd="@+id/sptranscode" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

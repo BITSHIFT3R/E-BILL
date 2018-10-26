@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/ScrollView01"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:fillViewport="true"
+
+android:scrollbars="none" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="430dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="527dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="27dp"
+            android:background="@drawable/bc"
+            android:gravity="center"
+            android:text="Repl./New Connection"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="normal|bold|italic" />
+
+        <TextView
+            android:id="@+id/repldiv"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tvmtrno"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/disdiv"
+            android:background="@drawable/edittext_round"
+            android:padding="5dip"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="normal|bold|italic" />
+
+        <Spinner
+            android:id="@+id/replacmtrt"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignRight="@+id/replacacc"
+            android:layout_alignTop="@+id/tvmtrname"
+            android:layout_toRightOf="@+id/textView10"
+            android:background="@drawable/n" />
+
+        <EditText
+            android:id="@+id/replacmtrmake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvmtrkwhmd"
+            android:layout_alignBottom="@+id/tvmtrkwhmd"
+            android:layout_alignLeft="@+id/replacmtrt"
+            android:layout_alignRight="@+id/replacmtrt"
+            android:background="@drawable/edittext_round"
+            android:ems="10"
+            android:inputType="textPostalAddress"
+            android:padding="3dip" />
+
+        <EditText
+            android:id="@+id/replacnmtrn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/replacmtrst"
+            android:layout_alignRight="@+id/replacmtrmake"
+            android:layout_alignTop="@+id/textView10"
+            android:background="@drawable/edittext_round"
+            android:ems="10"
+            android:inputType="textPostalAddress"
+            android:padding="3dip" />
+
+        <TextView
+            android:id="@+id/tvmtrno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="14dip"
+            android:text="Account No"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="normal|bold|italic" />
+
+        <TextView
+            android:id="@+id/replacacc"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvmtrno"
+            android:layout_alignBottom="@+id/tvmtrno"
+            android:layout_alignLeft="@+id/repldiv"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/edittext_round"
+            android:padding="5dip"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="normal|bold|italic" />
+
+        <TextView
+            android:id="@+id/tvmtrname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvmtrno"
+            android:layout_alignRight="@+id/tvmtrno"
+            android:layout_below="@+id/replacacc"
+            android:layout_marginTop="14dip"
+            android:text="Meter Type"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="normal|bold|italic" />
+
+        <TextView
+            android:id="@+id/tvmtrkwhmd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvmtrname"
+            android:layout_below="@+id/replacmtrt"
+            android:layout_marginTop="11dip"
+            android:text="Meter Make"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="normal|bold|italic" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView1"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="15dp"
+            android:text="Division"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="normal|bold|italic" />
+
+        <TextView
+            android:id="@+id/disdiv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvmtrkwhmd"
+            android:layout_below="@+id/replacmtrmake"
+            android:layout_marginTop="24dp"
+            android:text="Meter Status"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="normal|bold|italic" />
+
+        <Spinner
+            android:id="@+id/replacmtrst"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/disdiv"
+            android:layout_alignLeft="@+id/replacmtrmake"
+            android:layout_alignRight="@+id/replacmtrmake"
+            android:background="@drawable/n" />
+
+        <Button
+            android:id="@+id/replacesubmit"
+            android:layout_width="220dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:text="Submit" />
+
+        <Button
+            android:id="@+id/replaceimagemtr"
+            android:layout_width="130dp"
+            android:layout_height="40dip"
+            android:layout_alignRight="@+id/replacesubmit"
+            android:layout_below="@+id/replacnmtrn"
+            android:layout_marginTop="18dp"
+            android:text="Capture" />
+
+        <Button
+            android:id="@+id/replaceseal"
+            android:layout_width="130dp"
+            android:layout_height="40dip"
+            android:layout_alignLeft="@+id/replaceimagemtr"
+            android:layout_below="@+id/replaceimagemtr"
+            android:layout_marginTop="20dp"
+            android:text="Seal Certi" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvmtrstatus"
+            android:layout_alignRight="@+id/tvmtrkwhmd"
+            android:layout_alignTop="@+id/replaceseal"
+            android:text="Photo seal "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="normal|bold|italic" />
+
+        <TextView
+            android:id="@+id/tvmtrstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/replaceimagemtr"
+            android:layout_alignBottom="@+id/replaceimagemtr"
+            android:layout_alignLeft="@+id/textView10"
+            android:text="Photo Meter"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="normal|bold|italic" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/disdiv"
+            android:layout_below="@+id/disdiv"
+            android:layout_marginTop="21dp"
+            android:text="New Meter No"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="normal|bold|italic" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+</ScrollView>

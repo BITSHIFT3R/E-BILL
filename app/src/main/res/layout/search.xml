@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="22dp"
+        android:background="#F5DEB3"
+        android:gravity="center"
+        android:text="SEARCH"
+        android:textAppearance="?android:attr/textAppearanceLarge" />/>
+
+
+
+    <EditText
+        android:id="@+id/etfind"
+        android:layout_width="120dip"
+        android:layout_height="wrap_content"
+        android:hint="Employee code"
+        android:background="@drawable/edittext_round"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:ems="10"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="46dp"
+        android:layout_alignLeft="@+id/etorg"
+        android:layout_alignStart="@+id/etorg"
+        android:layout_alignRight="@+id/etorg"
+        android:layout_alignEnd="@+id/etorg">
+
+        <requestFocus />
+    </EditText>
+
+
+
+
+    <EditText
+        android:id="@+id/etorg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Org code"
+        android:background="@drawable/edittext_round"
+        android:padding="10dp"
+        android:ems="10"
+        android:layout_below="@+id/etfind"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dip" />
+
+    <Button
+        android:id="@+id/btnfind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="SUBMIT"
+        android:layout_below="@+id/checkunmtrd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dip" />
+
+    <CheckBox
+        android:id="@+id/checkunmtrd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="If Unmeterd"
+        android:layout_below="@+id/etorg"
+        android:layout_toLeftOf="@+id/btnfind"
+        android:layout_toStartOf="@+id/btnfind"
+        android:layout_marginTop="15dip" />
+
+</RelativeLayout>

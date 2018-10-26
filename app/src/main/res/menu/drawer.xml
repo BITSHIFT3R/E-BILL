@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+   >
+
+    <group android:checkableBehavior="single"
+        >
+        <item
+            android:id="@+id/starred"
+            android:checked="false"
+            android:icon="@drawable/sear"
+            android:title="Search" />
+        <item
+            android:id="@+id/survey"
+            android:checked="false"
+            android:icon="@drawable/survey"
+            android:title="Survey" />
+        <item
+            android:id="@+id/addnew"
+            android:checked="false"
+            android:icon="@drawable/survey"
+            android:title="Add New" />
+
+        <item
+            android:id="@+id/logout"
+            android:checked="false"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+
+
+
+    </group>
+</menu>

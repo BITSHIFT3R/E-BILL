@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:fillViewport="true"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="370dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="338dp"
+            android:layout_marginTop="7dip" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/repldiv"
+                android:layout_alignRight="@+id/repldiv"
+                android:layout_below="@+id/spsubcode"
+                android:layout_marginTop="70dp"
+                 android:textStyle="normal|bold|italic"
+                android:text="Photo"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/etsubname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/etsubcode"
+                android:layout_alignRight="@+id/etsubcode"
+                android:layout_alignTop="@+id/tvmtrname"
+               android:background="@drawable/edittext_round"
+                android:ems="10"
+                android:inputType="textPostalAddress"
+                android:padding="3dip" />
+
+            <TextView android:text="TextView"
+                android:id="@+id/etsubcode"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/tvmtrno"
+                android:layout_toRightOf="@+id/tvmtrno"
+                android:background="@drawable/edittext_round"
+                android:ems="10"
+                android:inputType="textPostalAddress"
+                android:padding="3dip" />
+
+            <TextView
+                android:id="@+id/tvmtrname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/repldiv"
+                android:layout_alignRight="@+id/repldiv"
+                android:layout_below="@+id/etsubcode"
+                android:layout_marginTop="10dip"
+                android:text="Name"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="normal|bold|italic" />
+
+            <TextView
+                android:id="@+id/tvmtrno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvmtrname"
+                android:layout_alignRight="@+id/tvmtrname"
+                android:layout_below="@+id/textView1"
+                android:layout_marginTop="16dp"
+                android:text="Division"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="normal|bold|italic" />
+
+            <Button
+                android:id="@+id/replaceseal"
+                android:layout_width="220dip"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:layout_alignRight="@+id/replaceimagemtr"
+                android:layout_alignEnd="@+id/replaceimagemtr"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/textView2"
+                android:layout_toEndOf="@+id/textView2" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/bc"
+                android:gravity="center"
+                android:text="Substation Master"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="normal|bold|italic" />
+
+            <Button
+                android:id="@+id/replaceimagemtr"
+                android:layout_width="100dip"
+                android:layout_height="40dip"
+                android:text="Capture"
+                android:layout_alignTop="@+id/textView2"
+                android:layout_alignLeft="@+id/etsubname"
+                android:layout_alignStart="@+id/etsubname" />
+
+            <TextView
+                android:id="@+id/repldiv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textView2"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="14dp"
+                android:text="Substation Code"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="normal|bold|italic" />
+
+            <EditText
+                android:id="@+id/spsubcode"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignLeft="@+id/etsubname"
+                android:layout_alignRight="@+id/replaceseal"
+                android:layout_below="@+id/etsubname"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/edittext_round" />
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sublv"
+                android:layout_alignLeft="@+id/spsubcode"
+                android:layout_alignStart="@+id/spsubcode"
+                android:layout_below="@+id/spsubcode"
+                android:layout_above="@+id/replaceimagemtr"
+                android:layout_alignRight="@+id/replaceseal"
+                android:layout_alignEnd="@+id/replaceseal" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RESET"
+                android:id="@+id/subreset"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/replaceseal"
+                android:layout_toEndOf="@+id/replaceseal" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#40b3b3"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="120dp"
+        android:paddingRight="20dp" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:background="@drawable/eb"
+            android:layout_marginBottom="20dip"/>
+
+
+        <Button
+            android:id="@+id/splashonline"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@color/btn_login_bg"
+            android:text="ONLINE"
+            android:textColor="@color/btn_login" />
+
+        <Button
+            android:id="@+id/splashooffline"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@color/btn_login_bg"
+            android:text="OFFLINE"
+            android:textColor="@color/btn_login" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

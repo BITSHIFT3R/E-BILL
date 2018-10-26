@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/offdsv1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:fillViewport="true"
+    android:scrollbars="vertical" >
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#26ae90"
+             android:gravity="center"
+
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dip"
+                android:textAlignment="center"
+                android:text="Account Details"
+                android:textStyle="normal|bold|italic"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="@color/bg_login"
+                android:textSize="17dip"
+                android:textStyle="normal|bold|italic" />
+            <TextView
+                android:id="@+id/offlinemainname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPostalAddress"
+                android:padding="3dip"
+                android:singleLine="false"
+                android:text="Loading..."/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Father&apos;s Name"
+                android:textColor="@color/bg_login"
+                android:textSize="17dip"
+                android:textStyle="normal|bold|italic" />
+            <TextView
+                android:id="@+id/offlinemainfather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPostalAddress"
+                android:padding="3dip"
+                android:singleLine="false"
+                android:text="Loading..."/>
+            </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:id="@+id/tvmtrno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textColor="@color/bg_login"
+                android:textSize="17dip"
+                android:textStyle="normal|bold|italic" />
+            <TextView
+                android:id="@+id/offlinemainadd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="Loading..."
+                android:padding="3dip"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="House No."
+                android:textColor="@color/bg_login"
+                android:textSize="17dip"
+                android:textStyle="normal|bold|italic" />
+            <TextView
+                android:id="@+id/offlinemainnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="Loadind..."
+                android:padding="3dip" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/bg_login"
+                android:text="Area"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="normal|bold|italic" />
+            <TextView
+                android:id="@+id/offlinemainarea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loading..."
+                />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/bg_login"
+                android:text="Land Mark"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="normal|bold|italic" />
+            <TextView
+                android:id="@+id/offlinemainmark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loading..."/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#26ae90"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/tvmtrkwhmd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Meter Detail"
+                android:padding="2dip"
+                android:textAlignment="center"
+                android:textStyle="normal|bold|italic" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:id="@+id/disdiv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Of Meters"
+                android:textColor="@color/bg_login"
+                android:textSize="17dip"
+                android:textStyle="normal|bold|italic" />
+            <TextView
+                android:id="@+id/offlinemainnmr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:text="Loading..." />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meters No"
+                android:textColor="@color/bg_login"
+                android:textSize="17dip"
+                android:textStyle="normal|bold|italic" />
+            <TextView
+                android:id="@+id/offlinemainmtrno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:text="loading..."/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Photo Of Meter"
+                android:textColor="@color/bg_login"
+                android:textSize="17dip"
+                android:textStyle="normal|bold|italic" />
+            <Button
+                android:id="@+id/offlinemainmter"
+                android:layout_width="wrap_content"
+                android:layout_height="39dip"
+                android:text="Capture"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Photo Of Docx"
+                android:textColor="@color/bg_login"
+                android:textSize="17dip"
+                android:textStyle="normal|bold|italic" />
+            <Button
+                android:id="@+id/offlinemaindocx"
+                android:layout_width="wrap_content"
+                android:layout_height="39dip"
+                android:text="Capture" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:id="@+id/TextView04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Photo Of Building"
+                android:textColor="@color/bg_login"
+                android:textSize="17dip"
+                android:textStyle="normal|bold|italic" />
+            <Button
+                android:id="@+id/offlinemainbuild"
+                android:layout_width="wrap_content"
+                android:layout_height="39dip"
+                android:text="Capture" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:id="@+id/tvmtrname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/bg_login"
+                android:text="Meter Type"
+                android:textSize="17dip"
+                android:textStyle="normal|bold|italic" />
+            <Spinner
+                android:id="@+id/offlineetmtrtype"
+                android:layout_width="100dp"
+                android:layout_height="27dip"
+                android:background="@drawable/n" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:id="@+id/tvmtrstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Process"
+                android:textColor="@color/bg_login"
+                android:textSize="17dip"
+                android:textStyle="normal|bold|italic" />
+            <Spinner
+                android:id="@+id/offlinespprocess"
+                android:layout_width="100dp"
+                android:layout_height="27dip"
+                android:layout_toRightOf="@+id/TextView04"
+                android:background="@drawable/n" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/bg_login"
+                android:text="Meter Make"
+                android:textSize="17dip"
+                android:textStyle="normal|bold|italic" />
+            <Spinner
+                android:id="@+id/offlinespmtrmake"
+                android:layout_width="100dp"
+                android:layout_height="27dip"
+                android:background="@drawable/n" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#26ae90"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Map To Pole"
+                android:padding="2dip"
+                android:textAlignment="center"
+                android:textStyle="normal|bold|italic"
+                android:gravity="center"
+                android:id="@+id/textView14" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SubStation"
+                android:id="@+id/textView15"
+                android:textSize="17dip"
+                android:textStyle="normal|bold|italic"
+                android:textColor="@color/bg_login" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/offlineetactsub"
+               android:text="Loading..."
+               />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal|bold|italic"
+                android:textSize="17dip"
+                android:text="Transformer"
+                android:id="@+id/textView16"
+                android:textColor="@color/bg_login" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/offlineetacttrans"
+                android:text="Loading..."/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/bg_login"
+                android:textStyle="normal|bold|italic"
+                android:layout_height="wrap_content"
+                android:text="Pole"
+                android:id="@+id/textView17" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/offlineetactpole"
+                android:text="Loading..."/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="#000000"
+            android:layout_marginTop="20dp"
+            >
+
+            <Button
+                android:id="@+id/offlinemainsubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:textColor="#000000"
+                />
+        </TableRow>
+    </TableLayout>
+
+    </ScrollView>

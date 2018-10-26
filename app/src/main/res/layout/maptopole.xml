@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:fillViewport="true"
+    android:scrollbars="vertical" >
+<RelativeLayout
+    android:id="@+id/rLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:scrollbars="none" >
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Map To Pole"
+            android:background="@drawable/bc"
+            android:gravity="center"
+            android:id="@+id/textView19"
+            android:layout_marginTop="22dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SubDivison"
+        android:id="@+id/textView20"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="normal|bold|italic"
+        android:layout_below="@+id/textView19"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dip" />
+
+    <Spinner
+        android:layout_width="110dip"
+        android:layout_height="50dip"
+        android:id="@+id/mspsub"
+        android:layout_alignTop="@+id/textView20"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="54dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginTop="-10dip" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transformer"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="normal|bold|italic"
+        android:id="@+id/textView21"
+        android:layout_below="@+id/mspsub"
+        android:layout_alignLeft="@+id/textView20"
+        android:layout_alignStart="@+id/textView20" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="50dip"
+        android:id="@+id/msptrans"
+        android:layout_below="@+id/mspsub"
+        android:layout_alignRight="@+id/mspsub"
+        android:layout_alignEnd="@+id/mspsub"
+        android:layout_alignLeft="@+id/mspsub"
+        android:layout_alignStart="@+id/mspsub" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_round"
+        android:padding="5dip"
+        android:hint="Pole Code"
+        android:id="@+id/metpolecode"
+        android:layout_below="@+id/msptrans"
+        android:layout_alignLeft="@+id/textView21"
+        android:layout_alignStart="@+id/textView21"
+        android:layout_alignRight="@+id/msptrans"
+        android:layout_alignEnd="@+id/msptrans" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/metacccode"
+        android:background="@drawable/edittext_round"
+        android:padding="5dip"
+        android:hint="Account No"
+        android:layout_below="@+id/mlvpolesrch"
+        android:layout_alignLeft="@+id/mlvpolesrch"
+        android:layout_alignStart="@+id/mlvpolesrch"
+        android:layout_alignRight="@+id/mlvpolesrch"
+        android:layout_alignEnd="@+id/mlvpolesrch" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="50dip"
+        android:id="@+id/mlvpolesrch"
+        android:layout_below="@+id/metpolecode"
+        android:layout_alignLeft="@+id/metpolecode"
+        android:layout_alignStart="@+id/metpolecode"
+        android:layout_alignRight="@+id/metpolecode"
+        android:layout_alignEnd="@+id/metpolecode" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/mbtnsbmt"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/textView20"
+        android:layout_toEndOf="@+id/textView20" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="30dip"
+        android:id="@+id/macctlistView"
+        android:layout_below="@+id/metacccode"
+        android:layout_alignLeft="@+id/metacccode"
+        android:layout_alignStart="@+id/metacccode"
+        android:layout_alignRight="@+id/metacccode"
+        android:layout_alignEnd="@+id/metacccode" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/msetname"
+        android:layout_below="@+id/macctlistView"
+        android:layout_alignLeft="@+id/macctlistView"
+        android:layout_alignStart="@+id/macctlistView"
+        android:layout_marginTop="25dip" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dip"
+        android:id="@+id/macctvname"
+        android:layout_alignTop="@+id/msetname"
+        android:layout_toRightOf="@+id/mbtnsbmt"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/msetmtr"
+        android:layout_below="@+id/msetname"
+        android:layout_alignLeft="@+id/msetname"
+        android:layout_alignStart="@+id/msetname"
+        android:layout_marginTop="34dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mmtrtvno"
+        android:layout_alignTop="@+id/msetmtr"
+        android:layout_alignLeft="@+id/macctvname"
+        android:layout_alignStart="@+id/macctvname"
+        android:layout_alignRight="@+id/macctvname"
+        android:layout_alignEnd="@+id/macctvname" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/maddtv"
+        android:layout_below="@+id/msetmtr"
+        android:layout_alignLeft="@+id/msetmtr"
+        android:layout_alignStart="@+id/msetmtr"
+        android:layout_marginTop="43dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dip"
+        android:id="@+id/msetaddtv"
+        android:layout_alignTop="@+id/maddtv"
+        android:layout_alignLeft="@+id/mmtrtvno"
+        android:layout_alignStart="@+id/mmtrtvno"
+        android:layout_alignRight="@+id/mmtrtvno"
+        android:layout_alignEnd="@+id/mmtrtvno" />
+
+    <Button
+        android:layout_width="90dip"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        android:id="@+id/mapreset"
+        android:layout_alignTop="@+id/mbtnsbmt"
+        android:layout_alignRight="@+id/msptrans"
+        android:layout_alignEnd="@+id/msptrans" />
+
+</RelativeLayout>
+
+</ScrollView>

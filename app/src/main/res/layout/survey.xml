@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#2f6699">
+<LinearLayout
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#2f6699"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical">
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/surgrp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:background="#f5f5f5"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="number"
+        android:maxLength="10"
+        android:padding="10dp"
+        android:hint="Group"
+        android:textColorHint="#2f6699"
+        >
+
+        <requestFocus />
+    </EditText>
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/surbookno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:background="#f5f5f5"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="number"
+        android:maxLength="4"
+        android:padding="10dp"
+        android:hint="BOOK NUMBER"
+        android:textColorHint="#2f6699"
+        >
+
+        <requestFocus />
+    </EditText>
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/surconnno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:background="#f5f5f5"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="number"
+        android:maxLength="4"
+        android:padding="10dp"
+        android:hint="CONNECTION NUMBER"
+        android:textColorHint="#2f6699"
+        >
+
+        <requestFocus />
+    </EditText>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="20dp"
+          android:text="SUPPLY TYPE"
+          android:textColor="#f5f5f5"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/surmeterexp"
+            android:background="@drawable/n"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:layout_marginTop="10dp"
+            ></Spinner>
+    </LinearLayout>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/surname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:background="#f5f5f5"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:hint="NAME"
+        android:textColorHint="#2f6699"
+        >
+
+        <requestFocus />
+    </EditText>
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/suraddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:background="#f5f5f5"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:singleLine="true"
+        android:padding="10dp"
+        android:hint="ADDRESS"
+        android:textColorHint="#2f6699"
+        >
+
+        <requestFocus />
+    </EditText>
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/surmobno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:background="#f5f5f5"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="number"
+        android:padding="10dp"
+        android:maxLength="10"
+        android:hint="MOBILE NUMBER"
+        android:textColorHint="#2f6699"
+        >
+
+        <requestFocus />
+    </EditText>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/surmetersrno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_weight="1"
+            android:background="#f5f5f5"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="10dp"
+            android:inputType="number"
+            android:maxLength="4"
+            android:hint="M.Sr NUMBER"
+            android:textColorHint="#2f6699"
+            >
+
+            <requestFocus />
+        </EditText>
+        <EditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/surmeterdepartmentno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="4"
+            android:layout_weight="1"
+            android:background="#f5f5f5"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="10dp"
+            android:hint="Dept. NUMBER"
+            android:textColorHint="#2f6699"
+            >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Meter EXCEPTION"
+            android:textColor="#f5f5f5"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/sursupplytype"
+            android:background="@drawable/n"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:gravity="left"
+
+            ></Spinner>
+    </LinearLayout>
+
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/surred"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:background="#f5f5f5"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:hint="READING"
+        android:textColorHint="#2f6699"
+        >
+
+        <requestFocus />
+    </EditText>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <EditText
+            android:id="@+id/surdemand"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="#f5f5f5"
+            android:singleLine="true"
+            android:padding="10dp"
+            android:hint="DEMAND"
+            android:textColorHint="#2f6699"
+            >
+            <requestFocus />
+        </EditText>
+        <Button
+            android:id="@+id/surimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/camlogo"/>
+    </LinearLayout>
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/surgpstype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="4"
+        android:layout_weight="1"
+        android:background="#f5f5f5"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:hint="GPS TYPE"
+        android:textColorHint="#2f6699"
+        >
+
+        <requestFocus />
+    </EditText>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <Button
+            android:id="@+id/sursave"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="#2f6699"
+            android:text="SAVE"
+            android:textColor="#f5f5f5"/>
+        <Button
+            android:id="@+id/surprint"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="#2f6699"
+            android:text="PRINT"
+            android:layout_marginLeft="30dp"
+            android:textColor="#f5f5f5"/>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

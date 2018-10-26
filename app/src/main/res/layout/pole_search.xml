@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="430dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+            <Button
+                android:id="@+id/maptopole"
+                android:layout_width="40dip"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/map"
+                android:layout_alignBottom="@+id/rbaddpole"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dip" />
+            <TextView
+                android:id="@+id/Header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="27dp"
+                android:background="@drawable/bc"
+                android:gravity="center"
+                android:text="POLE SEARCH"
+                    android:textStyle="normal|bold|italic"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <RadioButton
+                android:id="@+id/rbpolesearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/Header"
+                android:layout_marginLeft="37dp"
+                android:layout_marginTop="27dp"
+                android:text="Search" />
+
+            <RadioButton
+                android:id="@+id/rbaddpole"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/rbpolesearch"
+                android:layout_alignBottom="@+id/rbpolesearch"
+                android:layout_alignLeft="@+id/etpolecode"
+                
+                android:text="Add Pole" />
+
+            <Button
+                android:id="@+id/polesearchbtn"
+                android:layout_width="220dip"
+                android:layout_height="wrap_content"
+                android:text="Search"
+                android:layout_alignParentBottom="true"
+                android:layout_alignLeft="@+id/textView18"
+                android:layout_alignStart="@+id/textView18"
+                android:layout_alignRight="@+id/textView18"
+                android:layout_alignEnd="@+id/textView18" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SubDivision"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="normal|bold|italic"
+                android:layout_alignBottom="@+id/sppolesub"
+                android:layout_alignLeft="@+id/rbpolesearch"
+                android:layout_alignStart="@+id/rbpolesearch" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pole Code"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="normal|bold|italic"
+                android:layout_alignBottom="@+id/etpolecode"
+                android:layout_alignRight="@+id/rbpolesearch"
+                android:layout_alignEnd="@+id/rbpolesearch" />
+
+            <EditText 
+                android:id="@+id/etpolecode"
+                android:layout_width="150dip"
+                android:layout_height="60dip"
+
+                android:padding="3dip"
+                android:layout_below="@+id/sppoletrans"
+                android:layout_alignRight="@+id/maptopole"
+                android:layout_alignEnd="@+id/maptopole" />
+
+            <ListView
+                android:id="@+id/lvpolesrch"
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:layout_above="@+id/polesearchbtn"
+                android:layout_alignLeft="@+id/etpolecode"
+                android:layout_alignStart="@+id/etpolecode">
+
+            </ListView>
+
+            <Spinner
+                android:id="@+id/sppolesub"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:background="@drawable/n"
+                android:layout_below="@+id/maptopole"
+                android:layout_alignRight="@+id/etpolecode"
+                android:layout_alignEnd="@+id/etpolecode"
+                android:layout_alignLeft="@+id/rbaddpole"
+                android:layout_alignStart="@+id/rbaddpole"
+                android:layout_marginTop="20dip" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tranformer"
+                android:id="@+id/textView18"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="normal|bold|italic"
+                android:layout_centerVertical="true"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_alignStart="@+id/textView2"
+                android:layout_marginTop="30dip" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:id="@+id/sppoletrans"
+                android:background="@drawable/n"
+                android:layout_centerVertical="true"
+                android:layout_alignLeft="@+id/sppolesub"
+                android:layout_alignStart="@+id/sppolesub" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RESET"
+                android:id="@+id/polesreset"
+                android:layout_below="@+id/lvpolesrch"
+                android:layout_alignRight="@+id/rbaddpole"
+                android:layout_alignEnd="@+id/rbaddpole" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

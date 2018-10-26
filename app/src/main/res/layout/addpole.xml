@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:fillViewport="true"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="390dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:background="#26ae90"
+                android:gravity="center"
+                android:text="Add Pole" />
+
+            <EditText
+                android:id="@+id/etaddpole"
+                android:layout_width="170dip"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView2"
+                android:layout_alignLeft="@+id/sptrans"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/edittext_round"
+                android:ems="10"
+                android:padding="3dip" />
+
+            <TextView
+                android:id="@+id/tvmtrname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView1"
+                android:layout_below="@+id/textView1"
+                android:layout_marginTop="12dip"
+                android:text="Transfer Code"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="normal|bold|italic" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/TextView01"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="18dp"
+                android:text="Substation"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="normal|bold|italic" />
+
+            <Spinner
+                android:id="@+id/sptrans"
+                android:layout_width="130dip"
+                android:layout_height="30dip"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/tvmtrname"
+                android:background="@drawable/n" />
+
+            <Spinner
+                android:id="@+id/spaddpole"
+                android:layout_width="130dip"
+                android:layout_height="30dip"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/textView1"
+                android:background="@drawable/n" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvmtrname"
+                android:layout_alignRight="@+id/textView1"
+                android:layout_below="@+id/sptrans"
+                android:layout_marginTop="10dip"
+                android:text="Pole Code"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="normal|bold|italic" />
+
+            <Button
+                android:id="@+id/capturpolebtn"
+                android:layout_width="220dip"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="27dp"
+                android:text="Capture Pole" />
+
+            <Button
+                android:id="@+id/submitnewpole"
+                android:layout_width="220dip"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/capturpolebtn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:text="SUBMIT" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
